@@ -1,0 +1,40 @@
+html
+{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+  color: white;
+}
+.row
+{
+  margin-top: 40vh;
+}
+.row div
+{
+  display: inline-block;
+  padding-top: 3%;
+  padding-bottom: 15%;
+  padding-left: 7%;
+  padding-right: 7%;
+  background-color: red;
+}
+.col2
+{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+video
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+@media only screen and (max-width: 750px) {
+  video
+  {
+    height: 100vh;
+  }
+}
