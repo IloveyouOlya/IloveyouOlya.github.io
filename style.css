@@ -5,20 +5,21 @@ html
   height: 100%;
   width: 100%;
   font-family: 'Lato', sans-serif;
+  font-size: 1rem;
   color: white;
 }
 .row
 {
-  margin-top: 40vh;
+  margin-top: 25vh;
 }
-.row div
+.row span
 {
   display: inline-block;
   padding-top: 3%;
   padding-bottom: 15%;
   padding-left: 7%;
   padding-right: 7%;
-  background-color: red;
+  background-color: #b450c7;
 }
 .col2
 {
@@ -32,9 +33,39 @@ video
   left: 0;
   z-index: -1;
 }
+header
+{
+  margin-top: 6%;
+  text-transform: uppercase;
+  font-size: 2rem;
+  letter-spacing: 0.8vw;
+}
+header div
+{
+  padding-top: 0.4%;
+  padding-bottom: 0.4%;
+}
+header div span
+{
+  color: red;
+}
 @media only screen and (max-width: 750px) {
   video
   {
     height: 100vh;
+  }
+  .row
+  {
+    margin-top: 20vh;
+  }
+  header
+  {
+    margin-top: 17%;
+    font-size: 0.6rem;
+  }
+  header div
+  {
+    padding-top: 1%;
+    padding-bottom: 1%;
   }
 }
