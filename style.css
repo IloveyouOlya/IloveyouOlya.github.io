@@ -49,6 +49,26 @@ header div span
 {
   color: red;
 }
+#title1
+{
+  animation-name: moveleft;
+  animation-duration: 2.3s;
+  animation-timing-function: linear;
+}
+#title2
+{
+  animation-name: moveright;
+  animation-duration: 2.3s;
+  animation-timing-function: linear;
+}
+img
+{
+  height: 30%;
+  width: 30%;
+  animation-name: movetop;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+}
 @media only screen and (max-width: 750px) {
   video
   {
@@ -56,16 +76,56 @@ header div span
   }
   .row
   {
-    margin-top: 20vh;
+    margin-top: 25vh;
   }
   header
   {
     margin-top: 17%;
-    font-size: 0.6rem;
+    font-size: 0.78rem;
   }
   header div
   {
     padding-top: 1%;
     padding-bottom: 1%;
+  }
+  img
+  {
+    margin-top: 20vh;
+  }
+}
+@keyframes moveleft {
+  0% {
+    transform: translate(-5vw);
+    opacity: 0.2;
+  }
+  69% {
+    transform: translate(2vw);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moveright {
+  0% {
+    transform: translate(5vw);
+    opacity: 0.2;
+  }
+  69% {
+    transform: translate(-2vw);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes movetop {
+  0% {
+    transform: translateY(5vh);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
