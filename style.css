@@ -224,6 +224,7 @@ img
   .row
   {
     margin-top: 30vh;
+    height: 25vh;
   }
   header
   {
@@ -237,7 +238,7 @@ img
   }
   img
   {
-    margin-top: 20vh;
+    margin-top: 15vh;
   }
   .card div
   {
@@ -246,6 +247,8 @@ img
   .card_side
   {
     box-shadow: 0 .5rem 1.1rem rgba(0, 0, 0, 0.5);
+    width: 140%;
+    left: -20%;
   }
   .btn:active
   {
@@ -258,7 +261,7 @@ img
   .btn:link, .btn:visited
   {
     border-radius: .26rem;
-    left: 12.5%;
+    left: 22.5%;
     top: 77%;
     box-shadow: 0 .2rem .4rem rgba(0, 0, 0, .2);
   }
@@ -279,25 +282,25 @@ img
   }
   .details
   {
-    font-size: .4rem;
+    font-size: .2rem;
     margin-top: 10%;
   }
   .card_header
   {
     font-size: .6rem;
-    top: 13.5%;
+    top: 21.5%;
   }
   #head1
   {
-    right: 1%;
+    right: 3%;
   }
   #head2
   {
-    left: 26%;
+    left: 33%;
   }
   #head3
   {
-    left: 1%;
+    left: 3%;
   }
 }
 @media only screen and (min-width: 415px) {
