@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <script type="text/javascript" src="script.js"></script>
     <title>I love you Olya</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -26,16 +27,25 @@
       <center>
         <div class="row">
           <div class="card">
-            <div class="card_side front" id="front1">FRONT</div>
-            <div class="card_side back" id="back1">BACK</div>
+            <div class="card_side front" id="front1" onclick="turnFrontOne()">FRONT</div>
+            <div class="card_side back" id="back1">
+              BACK
+              <a href="#" class="btn">Download</a>
+            </div>
           </div>
           <div class="card">
-            <div class="card_side front" id="front2">FRONT</div>
-            <div class="card_side back" id="back2">BACK</div>
+            <div class="card_side front" id="front2" onclick="turnFrontTwo()">FRONT</div>
+            <div class="card_side back" id="back2">
+              BACK
+              <a href="#" class="btn">Download</a>
+            </div>
           </div>
           <div class="card">
-            <div class="card_side front" id="front3">FRONT</div>
-            <div class="card_side back" id="back3">BACK</div>
+            <div class="card_side front" id="front3" onclick="turnFrontThree()">FRONT</div>
+            <div class="card_side back" id="back3">
+              BACK
+              <a href="#" class="btn">Download</a>
+            </div>
           </div>
         </div>
       </center>
