@@ -34,8 +34,9 @@ html
   backface-visibility: hidden;
   width: 100%;
   height: 100%;
-  border-radius: .1rem;
+  border-radius: .3rem;
   box-shadow: 0 1rem 2.2rem rgba(0, 0, 0, 0.5);
+  overflow: hidden;
 }
 .front
 {
@@ -47,7 +48,7 @@ html
 }
 #back1
 {
-  background-image: linear-gradient(to left bottom, #b34fc6, #774fc6);
+  background-image: linear-gradient(to right bottom, #b34fc6, #774fc6);
 }
 #back2
 {
@@ -55,11 +56,11 @@ html
 }
 #back3
 {
-  background-image: linear-gradient(to right bottom, #b34fc6, #774fc6);
+  background-image: linear-gradient(to left bottom, #b34fc6, #774fc6);
 }
 .row .card:hover .front
 {
-  transform: rotateY(180deg);
+  transform: rotateY(-180deg);
 }
 .row .card:hover .back
 {
@@ -75,7 +76,7 @@ video
   position: fixed;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: -2;
 }
 header
 {
@@ -128,10 +129,92 @@ img
 .btn:hover
 {
   transform: translateY(-.2rem);
+  box-shadow: 0 .8rem 1.4rem rgba(0, 0, 0, .2);
 }
 .btn:active
 {
   transform: translateY(-.1rem);
+  box-shadow: 0 .4rem .8rem rgba(0, 0, 0, .2);
+}
+.btn::after
+{
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 7rem;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .4s;
+}
+.btn:hover::after
+{
+  transform: scaleX(1.25) scaleY(1.4);
+  opacity: 0;
+}
+.card_img
+{
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+  height: 45%;
+}
+#pic1
+{
+  background-image: linear-gradient(to left bottom, #b34fc6, #774fc6), url("video.jpg");
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+#pic2
+{
+  background-image: linear-gradient(to left bottom, #b34fc6, #774fc6), url("diary.jpg");
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 85%);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 85%);
+}
+#pic3
+{
+  background-image: linear-gradient(to left bottom, #b34fc6, #774fc6), url("makeof.jpg");
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+}
+.card_header
+{
+  font-size: 2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  position: absolute;
+  top: 22.3%;
+  text-align: right;
+}
+#head1
+{
+  right: 2%;
+  background-image: linear-gradient(to right bottom, rgba(179, 79, 198, .85), rgba(119, 79, 198, .85));
+}
+#head2
+{
+  background-image: linear-gradient(to bottom, rgba(179, 79, 198, .85), rgba(119, 79, 198, .85));
+  left: 35%;
+}
+#head3
+{
+  background-image: linear-gradient(to left bottom, rgba(179, 79, 198, .85), rgba(119, 79, 198, .85));
+  left: 2%;
+}
+.details
+{
+  font-size: 1.15rem;
+  margin-top: 24%;
+  color: #d8d8d8;
+}
+.back span
+{
+  font-size: 1.4rem;
+  display: block;
+  margin-top: 50%;
 }
 @media only screen and (max-width: 414px) {
   video
@@ -174,9 +257,47 @@ img
   }
   .btn:link, .btn:visited
   {
-    border-radius: .25rem;
+    border-radius: .26rem;
     left: 12.5%;
     top: 77%;
+    box-shadow: 0 .2rem .4rem rgba(0, 0, 0, .2);
+  }
+  .btn:active
+  {
+    box-shadow: 0 .1rem .2rem rgba(0, 0, 0, .2);
+  }
+  .btn:active::after
+  {
+    transform: scaleX(1.25) scaleY(1.4);
+    opacity: 0;
+  }
+  .back span
+  {
+    font-size: .6rem;
+    display: block;
+    margin-top: 35%;
+  }
+  .details
+  {
+    font-size: .4rem;
+    margin-top: 10%;
+  }
+  .card_header
+  {
+    font-size: .6rem;
+    top: 13.5%;
+  }
+  #head1
+  {
+    right: 1%;
+  }
+  #head2
+  {
+    left: 26%;
+  }
+  #head3
+  {
+    left: 1%;
   }
 }
 @media only screen and (min-width: 415px) {
