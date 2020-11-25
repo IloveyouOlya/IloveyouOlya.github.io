@@ -123,8 +123,15 @@ img
   display: inline-block;
   position: absolute;
   top: 80%;
-  left: 21.5%;
   border-radius: 7rem;
+}
+.down:link, .down:visited
+{
+  left: 21.5%;
+}
+.watch:link, .watch:visited
+{
+  left: 27%;
 }
 .btn:hover
 {
@@ -250,10 +257,6 @@ img
     width: 140%;
     left: -20%;
   }
-  .btn:active
-  {
-    transform: translateY(.1rem);
-  }
   .btn
   {
     font-size: .48rem;
@@ -261,7 +264,6 @@ img
   .btn:link, .btn:visited
   {
     border-radius: .26rem;
-    left: 22.5%;
     top: 77%;
     box-shadow: 0 .2rem .4rem rgba(0, 0, 0, .2);
   }
@@ -273,6 +275,14 @@ img
   {
     transform: scaleX(1.25) scaleY(1.4);
     opacity: 0;
+  }
+  .down:link, .down:visited
+  {
+    left: 23.5%;
+  }
+  .watch:link, .watch:visited
+  {
+    left: 35%;
   }
   .back span
   {
