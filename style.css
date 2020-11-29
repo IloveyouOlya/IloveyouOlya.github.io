@@ -259,11 +259,12 @@ img
   }
   .btn
   {
+    padding: 2.5% 5%;
     font-size: .48rem;
   }
   .btn:link, .btn:visited
   {
-    border-radius: .26rem;
+    border-radius: 2rem;
     top: 77%;
     box-shadow: 0 .2rem .4rem rgba(0, 0, 0, .2);
   }
@@ -278,11 +279,11 @@ img
   }
   .down:link, .down:visited
   {
-    left: 23.5%;
+    left: 18%;
   }
   .watch:link, .watch:visited
   {
-    left: 35%;
+    left: 29%;
   }
   .back span
   {
